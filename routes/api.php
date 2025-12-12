@@ -25,7 +25,7 @@ Route::post('/admin/update-user/{user}', [UserController::class, 'update']);
 Route::delete('/admin/delete-user/{user}', [UserController::class, 'destroy']);
 
 //Privilege Management Routes
-Route::post('/admin/privilege', [PrivilegeController::class, 'index']);
+Route::get('/admin/privileges', [PrivilegeController::class, 'index']);
 Route::post('/admin/create-privilege', [PrivilegeController::class, 'store']);
 Route::get('/admin/edit-privilege/{$privilege}', [PrivilegeController::class, 'show']);
 Route::get('/admin/update-privilege/{$privilege}', [PrivilegeController::class, 'update']);
